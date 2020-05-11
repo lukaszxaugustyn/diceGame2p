@@ -8,10 +8,37 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    
+    <div class='container'>
+    <h1 id='name'>DICE GAME</h1>
 
 
+<!-- LOGIN -->
+<div id="containerLogin">
+<form>
 
+</form>
+</div>
+
+
+<!--  -->
+
+
+<!-- GAME -->
+    <div class='container' id="containerGame">
+        <div id='scoreLabel'>
+        <h1>score:</h1>&nbsp;&nbsp;<h1 id='score'></h1>
+        <div id='dice'></div>
+        <img id='diceImg' src="img/dice1.png" style='display: none;'></img>
+    </div>
+        
+        
+        <button id='roll' onclick="diceRoll()">ROLL</button>
+        <button onclick="restart()">RESTART</button>
+    </div>
+<!--  -->
+
+
+</div>
     <script src="script.js"></script>
 </body>
 </html>
