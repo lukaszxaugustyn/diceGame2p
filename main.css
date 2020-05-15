@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap');
 
 
+
+
 body {
     color:white;
     font-family: 'Teko', sans-serif;
@@ -11,65 +13,81 @@ body {
 
 }
 
-.container {
-    min-height: 100vh;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    
-}
-
-.container #name {
-    font-size: 8.0em;
-}
-
-#containerGame {
-    min-height: 60vh;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    border:2px solid white;
-    border-radius: 10px;
-    min-width: 60%;
-    padding:10px;
-    
-
-}
-
-#scoreLabel {
+.flex-container {
     display: flex;
-    width:100%;
-    font-size: 3.0em;
-    justify-content: space-around;
+    flex-flow: row wrap;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+    align-items: center;
     
 }
 
-#diceImg {
-    display:block;
-    max-width:200px;
-    max-height:200px;
-    width: auto;
-    height: auto;
+
+.player {
+    align-self: center;
+    border: none;
+    margin:0 1%;
+    border:1px solid white;
+    border-radius: 10px;
 }
 
-
+#pLeft {
+    background: #11998e;
+    background: -webkit-linear-gradient(to bottom , #38ef7d, #11998e);
+    background: linear-gradient(to bottom, #38ef7d, #11998e);
+}
 
 
 button {
+    max-height: 100%;
+    font-size: 32pt;
     color: white;
     background-color: transparent;
     border: none;
     border:2px solid white;
     border-radius: 10px;
     padding: 15px 32px;
-    margin:30px;
+    margin:0px 10px;
     text-align: center;
     text-decoration: none;
     font-family: 'Teko', sans-serif;
-    font-size: 5.0em;
-    min-width: 30%;
-  }
+}
+
+button:hover {
+    background: #11998e;
+    background: -webkit-linear-gradient(to bottom , #38ef7d, #11998e);
+    background: linear-gradient(to bottom, #38ef7d, #11998e);
+
+}
+
+.header {
+    
+    
+    
+    width: 100%;
+    
+    
+}
+.top {
+    
+    
+    
+    width:50%;
+    
+}
+
+.player {
+    
+    
+    width:45%;
+    
+    
+}
+
+
+@media only screen and (min-width: 1200px) {
+   .top h1 {
+        font-size: 5.0em;
+    }
+}

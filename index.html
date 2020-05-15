@@ -4,41 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>DiceGame</title>
     <link rel="stylesheet" href="main.css">
+    
 </head>
 <body>
-    <div class='container'>
-    <h1 id='name'>DICE GAME</h1>
-
-
-<!-- LOGIN -->
-<div id="containerLogin">
-<form>
-
-</form>
-</div>
-
-
-<!--  -->
-
-
-<!-- GAME -->
-    <div class='container' id="containerGame">
-        <div id='scoreLabel'>
-        <h1>score:</h1>&nbsp;&nbsp;<h1 id='score'></h1>
-        <div id='dice'></div>
-        <img id='diceImg' src="img/dice1.png" style='display: none;'></img>
+    
+    <div class="flex-container">
+        <div class="header">
+            <button onclick="newGame()">New Game</button>
+            <button id='roll' onclick="roll()">Roll Dice</button>
+            <button id='hold' onclick="hold()">Hold</button>
+        </div>
+        <div class="top">
+            <h1 id='round'>PLAYER 1 ROUND</h1>
+        </div>
+        <div class='top'>
+            <img id='diceImg' src="img/dice1.png">
+        </div>
+        <div class="player" id='pLeft'>
+            <h1>Player 1 </h1>
+            <h1>SCORE</h1>
+            <h1 id='scoreOne'>0</h1>
+            <h1 id='score'>CURRENT SCORE</h1v>
+            <h1 id='cScoreOne'>0</h1>  
+        </div>
+         <div class="player" id='pRight'>             
+            <h1>Player 2 </h1>
+            <h1 class='score'>ROUND SCORE</h1>
+            <h1 id='scoreTwo'>0</h1>
+            <h1 class='score'>CURRENT SCORE</h1>
+            <h1 id='cScoreTwo'>0</h1>
+        </div>
     </div>
-        
-        
-        <button id='roll' onclick="diceRoll()">ROLL</button>
-        <button onclick="restart()">RESTART</button>
-    </div>
-<!--  -->
+    <script src="player.js"></script>
 
-
-</div>
-    <script src="script.js"></script>
 </body>
 </html>
